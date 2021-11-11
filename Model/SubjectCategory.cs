@@ -13,5 +13,17 @@ namespace MensaGymnazium.IntranetGen3.Model
 
 		[MaxLength(20)]
 		public string Name { get; set; }
+		public enum Entry
+		{
+			NotDefined = 0,
+
+			Graduational = 1,
+
+			Seminars = 2,
+
+			SpecialSeminars = 4,
+
+			ForeignLanguage = 8
+		}
 	}
 }
